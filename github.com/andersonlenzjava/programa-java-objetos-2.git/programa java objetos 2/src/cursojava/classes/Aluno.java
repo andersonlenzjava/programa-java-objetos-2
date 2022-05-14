@@ -131,12 +131,20 @@ public class Aluno {
 	/* Normalmente é usado boolean, string fica mais para telas */
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
-		if (media >= 70) {
-			return "Aluno está aprovado";
-		} else {
-			return "Aluno está reprovado";
+		if (media >= 50) {
+			if(media >= 70) {
+				if(media > 90) { 
+					return "Aluno você está aprovado - Parabéns";
+				}else {
+					return "Aluno você está aprovado";
+				}
+			}else {
+				return "Aluno você está de recuperação - estude mais !!";
+			}
+		}else {
+			return "Aluno você está reprovado";
 		}
-	}
+	}	
 
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
