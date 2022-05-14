@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
 
-public class ClassePrincipal {
+public class ClassePrincipal2 {
 
 	public static void main(String[] args) {
 
@@ -64,42 +64,10 @@ public class ClassePrincipal {
 			// adiciona um aluno a minha lista de alunos
 
 		}
-
-		// este laço é usado para verificar se algum dos alunos é igual a anderson
-		for (Aluno aluno : alunos) {
-
-			if (aluno.getNome().equalsIgnoreCase("anderson")) {
-				alunos.remove(aluno);
-				break;
-			}
-
-		}
-		// para o objeto aluno percore toda a lista de alunos, e retorna todos os aluno
-		// da lista de alunos
-		// laços for podem ser aplicdos a objetos e dai possuem sintaxe diferente
-
-		for (Aluno aluno : alunos) {
-			System.out.println("-----------------------------------------------------------------");
-			System.out.println("Restante de alunos que sobraram da lista");
-			System.out.println("nome aluno = " + aluno.getNome());
-			System.out.println("Suas matérias são");
-
-			for (Disciplina disciplina : aluno.getDisciplinas()) {
-				System.out.println(disciplina.getDisciplina() + " = " + disciplina.getNota());
-
-			}
-
-			System.out.println("Resultado do aluno = " + aluno.getAlunoAprovado());
-
-			System.out.println("Media das notas é = " + aluno.getMediaNota());
-
-			System.out.println("Resultado = " + aluno.getAlunoAprovado2() + "\n");
-			System.out.println("-----------------------------------------------------------------");
-//--------------------------------------------------------------------------------------------//	
-//	System.out.println(aluno1); // imprime tudo os dados do objeto para checagem rapida, la na frente vai ser
-			// feito uma seleção//
-			System.out.println(aluno.getDisciplinas());
-
+		//para substituir valores de uma posição de uma determinada lista 
+		
+		for (int pos = 0; pos <alunos.size(); pos ++) {
+			
 		}
 	}
 
