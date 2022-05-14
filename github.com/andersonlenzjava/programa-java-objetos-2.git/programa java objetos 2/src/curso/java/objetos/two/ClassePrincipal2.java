@@ -64,10 +64,13 @@ public class ClassePrincipal2 {
 			// adiciona um aluno a minha lista de alunos
 
 		}
-		//para substituir valores de uma posição de uma determinada lista 
+		//para substituir valores de uma posição de uma determinada lista (formas de trabalhar com listas)
 		
 		for (int pos = 0; pos <alunos.size(); pos ++) {
 			
+			Aluno aluno = alunos.get(pos); // retorna o aluno de uma determinada posição 
+			
+			System.out.println("Aluno = " + aluno);
 		}
 	}
 
